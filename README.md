@@ -24,7 +24,7 @@ val insert : 'a -> 'a list -> 'a list = <fun>
 	|hd::l -> insert hd (sort l)
 ;;
 
-val sort : 'a list -> 'a list = <fun>
+val sort : 'a list -> 'a list = <<fun>>
 
  sort [5;2;19;5;48;7;3];;
 - : int list = [2; 3; 5; 5; 7; 19; 48]
