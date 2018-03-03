@@ -11,9 +11,9 @@ Quelques exercices en OCaml
 	
 ;;
 
-'''ocaml
+```ocaml
 val insert : 'a -> 'a list -> 'a list = < fun >
-'''
+```
 
  insert 3 [1;4;6];;
 - : int list = [1; 3; 4; 6]
