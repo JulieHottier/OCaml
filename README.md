@@ -3,6 +3,8 @@ Quelques exercices en OCaml
 
 # insert
 
+```ocaml
+
  let rec insert a = function
  
 	|[] -> a::[]
@@ -11,15 +13,17 @@ Quelques exercices en OCaml
 	
 ;;
 
-```ocaml
+
 val insert : 'a -> 'a list -> 'a list = <fun>
-```
+
 
  insert 3 [1;4;6];;
 - : int list = [1; 3; 4; 6]
 
  insert 6 [1;2];;
 - : int list = [1; 2; 6]
+
+```
 
 # sort
 
