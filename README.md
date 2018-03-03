@@ -1,7 +1,7 @@
-#### OCaml
+# OCaml
 Quelques exercices en OCaml
 
-# insert
+#### insert
 
 ```ocaml
 
@@ -25,7 +25,7 @@ val insert : 'a -> 'a list -> 'a list = <fun>
 
 ```
 
-# sort
+#### sort
 
 ```ocaml
 
@@ -43,7 +43,7 @@ val sort : 'a list -> 'a list = <fun>
 
 ```
 
-# sort avec predicat
+#### sort avec predicat
 
 ```ocaml
 
@@ -67,7 +67,7 @@ val sort : 'a list -> 'a list = <fun>
 
 ```
 
-# sort avec prédicat "self-contained"
+#### sort avec prédicat "self-contained"
 
 ```ocaml
 
