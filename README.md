@@ -4,12 +4,14 @@ Quelques exercices en OCaml
 # insert
 
  let rec insert a = function
+ 
 	|[] -> a::[]
 	|hd::l when hd>a -> a::(hd::l) 
 	|hd::l -> hd::insert a l
+	
 ;;
 
-val insert : 'a -> 'a list -> 'a list = <fun>
+val insert : 'a -> 'a list -> 'a list = < fun >
 
  insert 3 [1;4;6];;
 - : int list = [1; 3; 4; 6]
@@ -20,8 +22,10 @@ val insert : 'a -> 'a list -> 'a list = <fun>
 # sort
 
  let rec sort = function 
+ 
 	|[] -> []
 	|hd::l -> insert hd (sort l)
+	
 ;;
 
 val sort : 'a list -> 'a list = < fun >
@@ -32,14 +36,18 @@ val sort : 'a list -> 'a list = < fun >
 # sort avec predicat
 
  let rec insert2 p a = function 
+ 
 	|[] -> a::[]
 	|hd::l when p a hd -> a::(hd::l)
 	|hd::l -> hd::insert2 p a l
+	
 ;;
 
  let rec sort2 p = function 
+ 
 	|[] -> []
 	|hd::l -> insert2 p hd (sort2 p l)
+	
 ;;
 
  sort2 ( > ) [3;1;5;6;6;42;12];;
@@ -48,14 +56,20 @@ val sort : 'a list -> 'a list = < fun >
 # sort avec prédicat "self-contained"
 
  let rec sort4 p = 
+ 
 	let rec insert x y = function 
+	
 		|[]-> y::[]
 		|hd::l when x y hd -> y::(hd::l)
-		|hd::l -> hd::insert x y l 			
+		|hd::l -> hd::insert x y l 	
+		
 	in 
+	
 	function 
+	
 	|[] -> []
 	|hd::l -> insert p hd (sort4 p l)
+	
 ;;
 
  sort4 ( > ) [3;1;5;6;6;42;12];;
