@@ -27,6 +27,8 @@ val insert : 'a -> 'a list -> 'a list = <fun>
 
 # sort
 
+```ocaml
+
  let rec sort = function 
  
 	|[] -> []
@@ -34,12 +36,16 @@ val insert : 'a -> 'a list -> 'a list = <fun>
 	
 ;;
 
-val sort : 'a list -> 'a list = < fun >
+val sort : 'a list -> 'a list = <fun>
 
  sort [5;2;19;5;48;7;3];;
 - : int list = [2; 3; 5; 5; 7; 19; 48]
 
+```
+
 # sort avec predicat
+
+```ocaml
 
  let rec insert2 p a = function 
  
@@ -59,7 +65,11 @@ val sort : 'a list -> 'a list = < fun >
  sort2 ( > ) [3;1;5;6;6;42;12];;
 - : int list = [42; 12; 6; 6; 5; 3; 1]
 
+```
+
 # sort avec prédicat "self-contained"
+
+```ocaml
 
  let rec sort4 p = 
  
@@ -80,3 +90,5 @@ val sort : 'a list -> 'a list = < fun >
 
  sort4 ( > ) [3;1;5;6;6;42;12];;
 - : int list = [42; 12; 6; 6; 5; 3; 1]
+
+```
