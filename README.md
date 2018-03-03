@@ -1,4 +1,4 @@
-# OCaml
+## OCaml
 Quelques exercices en OCaml
 
 # insert
