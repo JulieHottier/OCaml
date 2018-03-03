@@ -12,7 +12,7 @@ Quelques exercices en OCaml
 ;;
 
 ```ocaml
-val insert : 'a -> 'a list -> 'a list = < fun >
+val insert : 'a -> 'a list -> 'a list = <fun>
 ```
 
  insert 3 [1;4;6];;
